@@ -1,0 +1,30 @@
+print("\n*** Nombre 1: mauricio de leon    Matricula: AL05255077 ***")
+print("*** Nombre 2: alejandro urzais    Matricula: AL07293822 ***")
+print("*** Nombre 3: santiago muñoz    Matricula: AL07287947 ***\n")
+
+print("*** Ejercicio 14: COSTO DE ENVÍO ***")
+
+pedido = float(input("\n¿Cuánto es tu pedido? $"))
+distancia = float(input("¿A cuántos km vives de la tienda? "))
+
+if distancia <= 3:
+    costo_envio = 0
+    print("\n¡Envío gratis!")
+
+elif distancia <= 10:
+    costo_envio = 39
+    print("\nEl envío cuesta $39")
+
+elif distancia <= 20:
+    costo_envio = 69
+    print("\nEl envío cuesta $69")
+
+else:
+    costo_envio = 0
+    print("\nNo hacemos envíos a más de 20 km, recoge tu pedido en tienda")
+
+total = pedido + costo_envio
+
+print(f"Pedido: ${pedido:.2f}")
+print(f"Envío: ${costo_envio:.2f}")
+print(f"TOTAL A PAGAR: ${total:.2f}")

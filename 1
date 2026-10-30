@@ -1,0 +1,57 @@
+print("\n*** Nombre 1: mauricio de leon    Matricula: AL05255077 ***")
+print("*** Nombre 2: alejandro urzais    Matricula: AL07293822 ***")
+print("*** Nombre 3: santiago muñoz    Matricula: AL07287947 ***\n")
+
+print("*** Ejercicio 8: CUENTA ENTRE AMIGXS ***")
+
+cuenta = float(input("¿Cuánto fue la cuenta? "))
+personas = int(input("¿Cuántas personas van a pagar? "))
+dinero = float(input("¿Cuánto dinero traes? "))
+
+propina = cuenta * 10 / 100
+total = cuenta + propina
+por_persona = total / personas
+
+print("Total con propina: $", total, sep="")
+print("A cada persona le toca: $", por_persona, sep="")
+
+if dinero >= por_persona:
+    print("Te alcanza, te sobran $", dinero - por_persona, sep="")
+else:
+    print("No te alcanza, te faltan $", por_persona - dinero, sep="")
+
+if por_persona > 300:
+    print("Salió caro, la próxima busquen promo\n")
+else:
+    print("¡Buen precio!\n")
+
+
+
+
+
+  print("\n*** Nombre 1: mauricio de leon    Matricula: AL05255077 ***")
+print("*** Nombre 2: alejandro urzais    Matricula: AL07293822 ***")
+print("*** Nombre 3: santiago muñoz    Matricula: AL07287947 ***\n")
+
+print("*** Ejercicio 9: TAMAÑO DE TU BEBIDA ***")
+
+print("\n===== MENÚ DE TAMAÑOS =====")
+print("1 = Chico ($55)")
+print("2 = Mediano ($70)")
+print("3 = Grande ($85)")
+
+opcion = int(input("\n¿Qué tamaño quieres? Escribe 1, 2 o 3: "))
+
+if opcion == 1:
+    print("Elegiste tamaño CHICO, son $55")
+
+elif opcion == 2:
+    print("Elegiste tamaño MEDIANO, son $70")
+
+elif opcion == 3:
+    print("Elegiste tamaño GRANDE, son $85")
+
+else:
+    print("Opción no válida, elige 1, 2 o 3")
+
+print("\n¡Gracias por tu compra!")  

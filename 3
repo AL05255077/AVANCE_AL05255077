@@ -1,0 +1,22 @@
+print("\n*** Nombre 1: mauricio de leon    Matricula: AL05255077 ***")
+print("*** Nombre 2: alejandro urzais    Matricula: AL07293822 ***")
+print("*** Nombre 3: santiago muñoz    Matricula: AL07287947 ***\n")
+
+print("*** Ejercicio 10: NIVEL DE INFLUENCER ***")
+
+usuario = input("\nTu usuario: @")
+seguidores = int(input("¿Cuántos seguidores tienes? "))
+
+print(f"\n===== NIVEL DE @{usuario} =====")
+
+if seguidores < 1000:
+    print("Nivel: Principiante")
+
+elif seguidores < 10000:
+    print("Nivel: Microinfluencer")
+
+elif seguidores < 100000:
+    print("Nivel: Influencer")
+
+else:
+    print("Nivel: Celebridad digital")
